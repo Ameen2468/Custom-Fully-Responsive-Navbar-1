@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Custom Fully Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="main-nav">
+                <div class="left-nav">
+                    <div class="logo">
+                        <h2>AK DEV</h2>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <div class="main-menu">
+                        <ul id="menulist">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = '0px'
+
+        function toggleMenu() {
+            if (menulist.style.maxHeight == '0px') {
+                menulist.style.maxHeight = '400px'
+            }
+            else {
+                menulist.style.maxHeight = '0px'
+            }
+        }
+
+    </script>
+</body>
+
+</html>
